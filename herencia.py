@@ -12,7 +12,10 @@ class Animal(): #clase padre
 
     def __add__(self, otro):
         return self.peso + otro.peso
-    
+
+    def __str__(self):
+        return "Nombre: {0} y mi peso es: {1} lb.".format(self.nombre, self.peso)
+
 class Perro(Animal): #clase hija que hereda Animal
 
     def __init__(self, nombre, peso):
@@ -35,12 +38,5 @@ pioLindo = Gallina('Cricri', 3.5)
 pioLindo.producirSonido()
 
 print('El peso a transportar es', boby + pioLindo)
-
-"""
-+
--
-*
-/
-%
-"""
-        
+print(boby)
+print(pioLindo)
