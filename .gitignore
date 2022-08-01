@@ -2,3 +2,4 @@
 *.out
 *.dat
 *.txt
+.vscode/settings.json
